@@ -1,1 +1,4 @@
-<p>demo works!</p>
+<input type="text" #myVariable (keyup)="0"> <!-- here we are going to use a template reference variable -->
+<!-- Keyup event is added to the input tag-->
+<button (click)="sayHello(myVariable)">Say Hello</button> <!-- binding a event with a click event -->
+<p>{{ myVariable.value }}</p>
